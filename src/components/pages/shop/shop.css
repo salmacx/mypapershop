@@ -1,0 +1,69 @@
+/* Shop title styling */
+.shopTitle {
+    margin: 100px 0; /* Centered vertically with margin */
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Products grid layout */
+.products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Centers items within their grid cells */
+    padding: 0 20px; /* Add padding on sides to avoid edge-to-edge content */
+    max-width: 1200px; /* Optional: limit the max width of the product area */
+    margin: 0 auto; /* Center the products area */
+    padding-top: 100px; /* Space above products for symmetry */
+    padding-bottom: 100px; /* Space below products for symmetry */
+}
+
+/* Individual product styling */
+.product {
+    border-radius: 15px;
+    width: 100%; /* Allow product to use full width of grid cell */
+    max-width: 300px; /* Limit maximum width for better spacing */
+    height: auto; /* Adjust height to fit content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove margin, use padding instead */
+}
+
+/* Product image styling */
+.product img {
+    width: 100%; /* Make image responsive */
+    height: 250px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product description */
+.product .description {
+    text-align: center;
+}
+
+/* Hover effect for products */
+.product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+/* Button styling */
+.addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding: 5px 10px; /* Combined padding for simplicity */
+    border-radius: 15px;
+    margin-top: 10px; /* Space above button */
+}
+
+.addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+}

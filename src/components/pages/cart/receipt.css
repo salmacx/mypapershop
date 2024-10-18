@@ -1,0 +1,79 @@
+.receipt-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    align-items: center; /* Added */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.receipt-details {
+    margin-bottom: 20px;
+}
+
+.receipt-items-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center list items */
+}
+
+.receipt-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: center; /* Center align item info */
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-quantity,
+.item-price,
+.item-total {
+    margin-left: 10px;
+}
+
+.receipt-total {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center; /* Center the total */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.receipt-actions {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px;
+    width: 100%; /* Ensure actions take full width */
+}
+
+/* Updated button styles only */
+.receiptButton {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.receiptButton:hover {
+    background-color: rgb(50, 50, 50);
+}

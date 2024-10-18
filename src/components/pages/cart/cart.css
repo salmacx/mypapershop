@@ -1,0 +1,81 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartItem {
+    width: 700px;
+    height: 250px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out children to fill the container */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.cartItem img {
+    width: 200px;
+    margin-right: 20px; /* Space between image and other content */
+}
+
+.cartItem .description {
+    text-align: center; /* Center text in description */
+    font-size: 30px;
+    flex-grow: 1; /* Allow description to take remaining space */
+}
+
+.countHandler {
+    display: flex; /* Use flex to arrange items in a row */
+    align-items: center; /* Center items vertically within the flex container */
+    margin-left: 20px; /* Space to the left of the count handler */
+}
+
+.countHandler button {
+    margin: 0 3px; /* Add some horizontal space between buttons */
+}
+
+.countHandler input {
+    width: 40px; /* Fixed width for quantity input */
+    text-align: center; /* Center text within the input */
+    font-weight: bolder; /* Make the quantity text bolder */
+}
+
+
+.checkout {
+    display: flex; /* Use flex display for checkout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center all children horizontally */
+    margin-top: 20px; /* Add some margin for spacing */
+}
+
+.checkout p {
+    font-size: 1.5em; /* Optional: make the subtotal text larger */
+    text-align: center; /* Center the subtotal text */
+    margin-bottom: 10px; /* Add space below subtotal */
+}
+
+.checkout-buttons {
+    display: flex; /* Set to flex to align buttons next to each other */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 10px; /* Add some space above buttons */
+}
+
+.checkout button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.checkout button:hover {
+    background-color: rgb(50, 50, 50); /* Change color on hover */
+}
