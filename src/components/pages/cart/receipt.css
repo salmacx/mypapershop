@@ -5,9 +5,9 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
-    display: flex; /* Added */
-    flex-direction: column; /* Added */
-    align-items: center; /* Added */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
 .receipt-items-list {
     list-style-type: none;
     padding: 0;
-    text-align: center; /* Center list items */
+    text-align: center; 
 }
 
 .receipt-item {
@@ -34,7 +34,7 @@ h2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    align-items: center; /* Center align item info */
+    align-items: center; 
 }
 
 .item-name {
@@ -50,18 +50,18 @@ h2 {
 .receipt-total {
     font-size: 1.2em;
     margin-top: 20px;
-    text-align: center; /* Center the total */
-    width: 100%; /* Ensure it takes full width */
+    text-align: center;
+    width: 100%; 
 }
 
 .receipt-actions {
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center;
     margin-top: 20px;
-    width: 100%; /* Ensure actions take full width */
+    width: 100%; 
 }
 
-/* Updated button styles only */
+
 .receiptButton {
     width: 150px;
     height: 50px;

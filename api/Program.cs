@@ -1,19 +1,19 @@
-using Microsoft.EntityFrameworkCore; // Required for DbContext and UseNpgsql
-using api.Data; // Required for AppDbContext
+using Microsoft.EntityFrameworkCore; 
+using api.Data; 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllers();  // This adds support for controllers
+
+builder.Services.AddControllers();  
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add Entity Framework Core with Npgsql
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 
-// Configure CORS
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -27,17 +27,17 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowAll"); // Enable CORS
+app.UseCors("AllowAll"); 
 
 app.UseAuthorization();
 
-app.MapControllers(); // This tells the API to map controller routes
+app.MapControllers(); 
 
-app.Run(); // This starts the web server
+app.Run(); 

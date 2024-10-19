@@ -3,9 +3,9 @@
     height: 80px;
     background-color: rgb(19, 19, 19);
     display: flex;
-    justify-content: flex-end; /* Aligns links to the right */
+    justify-content: flex-end; 
     align-items: center;
-    padding: 0 20px; /* Adds padding on the sides */
+    padding: 0 20px; 
 }
 
 .links {

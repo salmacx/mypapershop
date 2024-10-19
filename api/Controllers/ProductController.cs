@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using api.Data;
 using api.models;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
@@ -18,7 +17,7 @@ namespace api.Controllers
             _context = context;
         }
 
-        // GET: api/product
+       
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
@@ -26,7 +25,7 @@ namespace api.Controllers
             return Ok(products);
         }
 
-        // GET: api/product/{id}
+       
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProductById(int id)
         {
@@ -37,7 +36,6 @@ namespace api.Controllers
             return Ok(product);
         }
 
-        // POST: api/product
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct([FromBody] Product product)
         {

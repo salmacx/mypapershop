@@ -20,7 +20,7 @@ const Receipt = () => {
     };
 
     if (!hasItemsInCart()) {
-        return <h1>No items in cart. Redirecting to shop.</h1>; // Handle no items case
+        return <h1>No items in cart. Redirecting to shop.</h1>; 
     }
 
     return (

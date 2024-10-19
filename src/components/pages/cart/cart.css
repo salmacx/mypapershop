@@ -3,23 +3,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px; 
 }
+
 
 .cartItem {
     width: 700px;
     height: 250px;
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space out children to fill the container */
+    align-items: center; 
+    justify-content: space-between; 
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
     margin: 30px;
-    padding: 20px; /* Add some padding for better spacing */
+    padding: 20px;
 }
 
 .cartItem img {
     width: 200px;
-    margin-right: 20px; /* Space between image and other content */
+    margin-right: 20px; 
 }
 
 .cartItem .description {
